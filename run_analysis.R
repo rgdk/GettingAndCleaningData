@@ -115,7 +115,7 @@ all_data_tbl <- data.table(all_data)
 #ensure we don't calculate the means of the first 2 columns as they are descriptors
 colsToInclude <- tail(names(all_data_tbl), -2)
 
-#store the 2 data sets (means and standard deviations in 2 separate variables)
+#store the data set
 means_data <- all_data_tbl[, lapply(.SD, mean), .SDcols=colsToInclude, by=list(activity, subject_id)]
 
 #we can output this data set to file as ordered data
