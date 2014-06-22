@@ -1,5 +1,3 @@
-#Code Book
-
 ==================================================================
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
@@ -100,6 +98,7 @@ means_data : contains all the data averaged and grouped by activity and subject_
 
 means_data_by_subj_and_activity.txt : The output file of means_data
 
+Note all numeric data was not rounded, and was calculated as is.
 
 Notes: 
 ======
